@@ -2,10 +2,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "rootDir": "./",
-    // "composite": true,
-    "outDir": "build",
-    //"forceConsistentCasingInFileNames": true,
+    "outDir": "es5",
+    "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
     "declarationMap": true,
@@ -14,27 +12,31 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
+    "isolatedModules": true,
     "declaration": true,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ES2020",
-    "module": "CommonJS",
+    "target": "es5",
+    "module": "esnext",
     "useDefineForClassFields": false,
     "types": ["node", "react"],
     "resolveJsonModule": true,
     "lib": [
       "dom",
-      "dom.iterable",
-      "ES2020"
+      "dom.iterable"
     ],
     "allowJs": true,
-    "esModuleInterop": true,
+    "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "jsx": "react"
   },
-
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
   "include": [
     "projects",
     "projects/**/*.ts",

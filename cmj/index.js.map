@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../projects/src/index.ts"],"names":[],"mappings":";;;AAAA,0DAAgC;AAChC,wDAA8B","sourcesContent":["export * from './Button/button';\r\nexport * from './Alert/alert';\r\n"]}

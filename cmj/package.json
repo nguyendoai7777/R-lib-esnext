@@ -1,0 +1,36 @@
+{
+    "name": "dnd-button",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "exports": {
+        "./package.json": "./package.json",
+        ".": {
+            "types": "./index.d.ts",
+            "default": "./index.js"
+        }
+    },
+    "sideEffects": false,
+    "typings": "./index.d.ts",
+    "module": "./index.js",
+    "author": {
+        "email": "nguyendoai7777@gmail.com",
+        "name": "nguyendoai7777"
+    },
+    "keywords": [
+        "typescript",
+        "custom buttom",
+        "react"
+    ],
+    "description": "custom button",
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "tslib": "^2.4.1"
+    }
+}
